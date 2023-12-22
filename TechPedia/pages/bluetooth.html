@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>한점 부끄럼이 없기를</title>
+    <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+  
+    <!--===== CSS =====-->
+    <link rel="stylesheet" href="/TechPedia/style.css">
+
+    <!--=== Google Fonts+Icons ===-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+
+</head>
+<body>
+    <nav class="sidebar">
+        <header>
+            <div class="logo-text">
+                <span class="logo">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOsAAADWCAMAAAAHMIWUAAAAdVBMVEX///8AAADBwcH29vZkZGSpqanHx8fU1NSampqMjIz7+/ve3t54eHi0tLQXFxewsLC6urpXV1eFhYVQUFBra2vv7+82Njafn59AQEDW1taUlJTo6OhcXFxycnInJyc7OzsvLy9ISEgQEBAeHh5LS0t+fn4qKir4Zo3jAAALXklEQVR4nN1d6ULySgylFAqCqGyyK5VP3/8R70VQumRyktlaPH9pp3OYLZM5yXQ6d4F08LLariabUdMVCY10tU5+0HtpujYhkT4mZayarlEwTJIaTpumKxUGizrV/9Fvuloh8I+kmiQPTVfMP3oGqkny3HTVfGNrpJok46Yr5xdjhmry1nTt/MI0WP/g/DRgqSZJ0/XzCXq5uYG1oEa73S6KQZnN9l9PJbwvVjtlISNANZkz3z9+P/F06C/dmCD0TXXTmTsZ4prQ7TYafhQfyjMfnGjs3syV+9QUxC04Fwyo1+r/dK7tUVJs2NqZu10daLgmyaT+0mhKPRjG8FiC6h3kRb1DrtvaO6mhUwUxKWEFibYwgBkLV8yqr6Qn+d/ijBdYP8OEQuAIi6q11tz8rP8t/hPmKjZ3zHb/D6rDcMU97HvxYQ3YK9bSwmawqG75BX6umHrmOhRwTVJhYYRDooJKUx34pz07M3BTKL65QwV9lZ9HS8DCL9e9hGsXl3PBGhRUmVvZ0XqGtEPJwMyDFlyfQUEVc4jfAWo+3ADXzgdbTrVPwg/7NSg8c+Vnp0qz8sbpGfs2c2XLq3rE8bbo1GquqbkX1xpJYLL5pOqdq3ndea09ipfjD39EOwG4dnZ0y/6rP9mFHz4Kv5mOB4MxNNv9c+2kVJm1DU4He+KkVuLz9YN7sFsIwJVwNKxJyyuFH5asOd1CP3oj/R5BuXZG/eKu2Og/gltnwYcrRu4wOtfyWDRu9qF/Cu/qag4cow29GRrdAo5ci+uJ0XeE9go9+BnCnKd8RsvJgrfownOtt0oZ0HdK7lyqLZtORJ03NFfeUwBdmIZNWqllu6KdXASunU/us2i0Gln8tmy6EriYYnHl3HHIzcU02IXsripRaZir2TWB1lbWkfd/N94BB098rsa5+BF8AAzDR5FzKTLXzpK0KJAiCrtn28i103moffCEVptgVENz7ezKVf+AMjd2+m4319Kg/YdPX/HGNyrXoj2MuRZtCnxmBY/vA3A9PBrxWbT+dFzxPk50VuGZK95rX+CbKz4OdICpDyPX9xWeucKTFCcYx6tswfbMFbtaXWCem9ABzjc8cw05C3Nc0UnbNzxzFY4cSzBrjqRDYTHAXfRheFx8Bj6+vYe56QwofhE473VrjshHZguWKzxtE+hZdFzrewWP4G1EYIhzHls7rtiHHowre2Q8ZT3xdlwFukeEj2Peu5qzvfm6OAyR7T8yQkJUz1XmwacxH3bHdafdbvD8+Cri6gwt19GrFc+8zx7mpdlnC7nakF2LRNibUGreX6i5qskuWhPkpufaGWEB7w2z4K0lhwVXiVr5ioNfSZgjrLgKyb63LNzLjmsnF1BtXRSfJVe8Czi2aKBeYckVxlJQipSmYccV+vbkkQoREWZuChjS5AArrkji17L59wdWXIGToH2z0gU2XEGzIqqbl+1huj4e19PHYRbzf7Hhynv/WfN3t6qdVB8msYwrC668N5Hz+7wYdr+R8ptYcGVjBZizvj4j6vqIEWSu58qaTGZh1AvQAMEDfXcUay7jyp4kmYbeDgaOJMleGNm23ffsUDytlXHlqmtqG1P0dgUyLwyMLZJAxJVbcEzBH2I9iciKxkEoAoi4cuomuhOaYoopiOTozkQTGVfOG06LaJYqYeJa4OwFGlkRJFyZLkyH9IyUGkxBGKyPASvhygw92g+hdrHilARStQgHSZw687r2vzEBJpsQHbMDCCw15i8lLR/hYlMGXHqkqnoG9LSw628Pix8wKg3qbUmcOgFkVOR2xRZANkwm9QWTSlyRgKUOFKRpq9r9BTUzpQLT7grqBNRaSwJsY6uRccOcqqtmwqPqZF2bL6q0Yhu4gByqmtFGzeEO62D0hJ2a6Y7qFg7TZT2MNSxUegGiYzip3EQCCG9Q6UAom91BbqDKceQBOB64AMLsd7RuoiYUVgXZEM5DRws96uykMtoJN6/jzgtFCXmFai9GvO9GFS6xXqGp2Hv9dUtT+IbACQytuRIdzllXHfOsT1MvwpZ2VvPFTMGqqReh8nSORYt5Mq+pF9EG8h2SATEnYk29iMXQcut6A04P0AxXYh6x02gWoEn7GZMr4SFy5kqksXFGmj303t/eew9Z2QTV1Itwl7awD2fFM4tesS9q6kWY/q2bm8bVf//1tm/U1IvwSrRtzaH8cb+eaMd6OdsSfuWMdDfLR3quhJOzXTaiSc5yGqm5PtVLb5Xtb3aR5N+/q/Z0hBfBkarPPR0XQvU9/FSLBrFXV2a+qcLjNMx3sbOgUJVdgTAS2+OD4Z18516s8q0RreDoW/MnZkP6ioEyvwI1upx8plxS4GWmAlrpz59SJVggBqzTqsOtOO5BfSV8R85qzigoIbjDGQc7C/vQhhRxnp00YczUDizU2ZV9sTS+LTSNPUAt/dZfZ+828iENKeHiQUrliyTlCrMesax96EWjV8SPNZ9JTQrCRWwtbOA1BL6Ha0F4s5xsZ79g4nIoPbhl4gLWFPafa8gkMjK/QTaGlWKC1/wI8kQrYdJ1MQOYjFTBl93UADbp/pOgmXbKTEPRDqJc+2UgNQ2QLssUTsRZueQ7I2X+DaS99N+FzanRmXk5J18w39ND4R2dp2d9JZ6RXW52WHI6KjpiMFVk8wrhAEcZe8yLOSsZMTSKeDoJc4bDu+WPzJvczGpSrwhNnUAaCb5hORuNNUdN0/dYIOGcBjtJ52Qu/O05rNPNGA6KrIqQsUjMWgBceKzK07xDSbmOfAobyG9eKVFfYtuHm0lN6cN7wVPBGK60OMFhw8807Pnasl+bkxdRYkJJJfReII5jucKFY5ytZov58ZhPH7cv8cK960NPNO0D55bq1s94GJXStb8KdTbI/o4pdVBhM1ycA96+Ds/y2HHkXJFEit0NkBrira25CCyA4zJbmTnEDtjP7fnqwsYgykMWIQI9AqQp1/Z/YNTKdVqzmCrgANAl0vu8Z7bqBIn7ux23VokvD5BuOpmbNzvpQIiN1040sk17P99mpv3MMtueN3tmrrn8MyeP67qTMOB1/9DPBuNfbLLuajb9+fccc97/wFvEVsiLG0xctd5vT4ECTeRa1qcJ8cO1gRzaFtIhP8li1XeTaUBy1R4HneHFzeysp2RBcrVZ4bxMxfHvMrBS0nvhGv2OCrsV7i655nYF3WEf1uR9KsEL17j3cfS3QzFWxdNDP2ZiI3dAiVA0rvxwbeJuLxmKXlw/XJu4s60prq5ZZ+6Kqy4Tw51zbdfdmYG5tupO1BvCcEWa1llqc4FxS7nyUUZn5eTSim0ruXIm+VUkurPY1beTq7kbF/Swz9qtZ0u5mlq2LP0dP6j8GG3lSsfO1oUSA0VUXmu5Ui1LC7rHfWEwSHu51t0jjPxF5F9oMdeq4JS7wlsUZuJtTxdCrlrcCLyxp1PBuWbF+SMPcTA46ueX0pGgMDDXTdWHcAxyd9pyk2W44LBcKbtFce+RZwTlSk98MVPnlBCSq8kHdvRJQIGAXM1Fi/Ln+0c4rpzkVZL/3D+CccWpI6IjGFecOiI6QnFF4dxxM/teIPJRWXBF/o+4mX0vEClZLGwdWKZ/KhCiGDN9OAeWjTRwz65EfCC4dKQKfAoRM1HoD74wV25PaAAeGk1c4SlIGmQRkYQPXJqYnDo5qpVNb8OB/40I8ZHizSqkB7vcG2lXMD3ZWTjtHK//Y8n4xi2j0nC+mcbujJ4Y9HZ7Wxsda1UavIl2vO0dn0pYH/oOwR7oXIHI23i3QCdkzXmd/AN14j8QH3QDb000s+KEAr9s33NoEAHO/G/C8A8Kcy/+Wz34G6YTT3Tx212CPs6OeidNPFABPNEvQouFmqLqMdaV7U1gub3tLI7bP7bW1LHrDh9mD8Ouha30H3c5qm6WW4/SAAAAAElFTkSuQmCC" alt="logo">
+                </span>
+                <div class="text header-text">
+                    <span class="name">
+                        <a href="/TechPedia/pages/main.html">Techpedia</a>
+                    </span>
+                    <span class="profession">전자기기의 모든 것</span>
+                </div>
+            </div>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="/TechPedia/pages/power.html">
+                            <span class="material-symbols-outlined icon">power_settings_new</span>
+                            <span class="text nav-text">전원</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/TechPedia/pages/sound.html">
+                            <span class="material-symbols-outlined icon">volume_up</span>
+                            <span class="text nav-text">음량 조절</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/TechPedia/pages/text.html">
+                            <span class="material-symbols-outlined icon">text_fields</span>
+                            <span class="text nav-text">문자 크기 조절</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/TechPedia/pages/button.html">
+                            <span class="material-symbols-outlined icon">radio_button_checked</span>
+                            <span class="text nav-text">버튼 사용</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/TechPedia/pages/wifi.html">
+                            <span class="material-symbols-outlined icon">wifi</span>
+                            <span class="text nav-text">WIFI 연결</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/TechPedia/pages/bluetooth.html" class="Spot">
+                            <span class="material-symbols-outlined icon">bluetooth</span>
+                            <span class="text nav-text">Bluetooth 연결</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/TechPedia/pages/charge.html">
+                            <span class="material-symbols-outlined icon">battery_charging_full</span>
+                            <span class="text nav-text">충전기 사용</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom-content">
+                <li class="mode">
+                    <div class="moon-sun">
+                        <span class="material-symbols-outlined icon moon">dark_mode</span>
+                        <span class="material-symbols-outlined icon sun">light_mode</span>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div> 
+    </nav>
+    <section class="main">
+        <div class="text">
+            <div class="title">
+                <a>Bluetooth</a>
+            </div>
+            <div class="line"></div>
+            <div class="Desc">
+                <a>
+                    <img src="https://blog.kakaocdn.net/dn/OPnw7/btrfG2pZ19b/ZPRnuvAzUCKjQxCzq1rSf1/img.jpg" style="width: 20%; height: 40%;">
+                    <img src="https://shoplus.files.wordpress.com/2020/01/3.jpg" style="width: 20%; height: 40%;">
+                    <img src="https://shoplus.files.wordpress.com/2020/01/4.jpg" style="width: 20%; height: 40%;">
+                    <img src="https://shoplus.files.wordpress.com/2020/01/5.jpg" style="width: 20%; height: 40%;">
+
+                    <br> 
+                    블루투스 연결방법
+                    1. 핸드폰에 있는 설정 앱을 눌러 들어간다.<br>
+                    2. 설정 앱에 들어가 가장 위에 위치한 '연결'을 누른다.<br>
+                    3. 연결에 들어가 두번째에 위치한 '블루투스'를 누른다.<br>
+                    4. 블루투스에서 자신이 연결할 장치의 이름이 나오면 그것을 눌러 연결한다.<br>
+                    5. 만약 자신의 장치가 나오지 않을 경우 우측 상단 '찾기'버튼을 눌러 장치의 이름이 나올 때까지 기다린다.<br> 
+                    </a>
+            </div>
+        </div>
+    </section>
+    <!--===== Animation + etc =====-->
+    <script src="/TechPedia/script.js"></script>
+</body>
+</html>
