@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -280,11 +279,10 @@ body.dark .switch::before {
 }
 
 .main .text .Desc a{
-  font-family: 'Noto Serif KR', serif;
   padding: 15px;
   margin-top: 15px;
   font-size: 24px;
-  font-weight: 200;
+  font-weight: 300;
   white-space: nowrap;
 }
 
